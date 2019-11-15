@@ -23,7 +23,7 @@ const cats = [
     imageDescription:
     'Orange bengal cat with black stripes lounging on concrete.',
     name: 'Fluffy',
-    sex: 'Female',
+    sex: 'Male',
     age: 2,
     breed: 'Bengal',
     story: 'Thrown on the street',
@@ -36,7 +36,7 @@ const cats = [
     'Orange bengal cat with black stripes lounging on concrete.',
     name: 'Fluffy',
     sex: 'Female',
-    age: 2,
+    age: 1,
     breed: 'Bengal',
     story: 'Thrown on the street',
     id: 3,
@@ -47,8 +47,8 @@ const cats = [
     imageDescription:
     'Orange bengal cat with black stripes lounging on concrete.',
     name: 'Fluffy',
-    sex: 'Female',
-    age: 2,
+    sex: 'Male',
+    age: 3,
     breed: 'Bengal',
     story: 'Thrown on the street',
     id: 4
@@ -58,9 +58,9 @@ const cats = [
     'https://cbsnews1.cbsistatic.com/hub/i/2016/03/23/38e32f54-b910-4612-8852-be9e0fbdbf73/cat-istock.jpg',
     imageDescription:
     'Orange bengal cat with black stripes lounging on concrete.',
-    name: 'Fluffy',
+    name: 'Garfield',
     sex: 'Female',
-    age: 2,
+    age: 4,
     breed: 'Bengal',
     story: 'Thrown on the street',
     id: 5

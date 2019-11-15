@@ -47,6 +47,16 @@ class Queue {
       currNode = currNode.next;
     }
   }
+
+  getAllAsArray() {
+    let currNode = this.first;
+    let arr = [];
+    while (currNode !== null) {
+      arr.push(currNode.value);
+      currNode = currNode.next;
+    }
+    return arr;
+  }
 }
 
 module.exports = Queue;
