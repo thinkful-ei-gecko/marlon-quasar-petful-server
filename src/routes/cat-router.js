@@ -4,8 +4,6 @@ const Cats = require('../../utility/Cats');
 
 const catRouter = express.Router();
 
-
-
 catRouter
   .route('/') // prettier-ignore
   .get((req, res) => {
@@ -13,7 +11,7 @@ catRouter
     res.json(catarray);
   })
   .delete((req, res, next) => {
-    
+    Cats.dequeue();
   });
 
 module.exports = catRouter;
