@@ -1,26 +1,18 @@
 const express = require('express');
 const path = require('path');
+const Dogs = require('../../utility/Dogs');
 
 const dogRouter = express.Router();
 
 dogRouter
   .route('/') // prettier-ignore
   .get((req, res) => {
-    const dog = {
-      imageURL:
-        'http://www.dogster.com/wp-content/uploads/2015/05/Cute%20dog%20listening%20to%20music%201_1.jpg',
-      imageDescription:
-        'A smiling golden-brown golden retreiver listening to music.',
-      name: 'Zeus',
-      sex: 'Male',
-      age: 3,
-      breed: 'Golden Retriever',
-      story: 'Owner Passed away'
-    };
-    res.json(dog);
+    let dogarray = Dogs.getAllAsArray();
+    res.json(dogarray);
   })
   .delete((req, res, next) => {
-    
+    Dogs.dequeue();
+    res.status(204).end();
   });
 
 module.exports = dogRouter;

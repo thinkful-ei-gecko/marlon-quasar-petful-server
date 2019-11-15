@@ -12,6 +12,7 @@ catRouter
   })
   .delete((req, res, next) => {
     Cats.dequeue();
+    res.status(204).end();
   });
 
 module.exports = catRouter;
