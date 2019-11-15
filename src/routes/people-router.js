@@ -11,10 +11,6 @@ peopleRouter
     let peoplearray = People.getAllAsArray();
     res.json(peoplearray);
   })
-  .delete((req, res, next) => {
-    People.dequeue();
-    res.status(204).end();
-  })
   .post(bodyParser, (req, res, next) => {
     const { name } = req.body;
 

@@ -9,10 +9,6 @@ dogRouter
   .get((req, res) => {
     let dogarray = Dogs.getAllAsArray();
     res.json(dogarray);
-  })
-  .delete((req, res, next) => {
-    Dogs.dequeue();
-    res.status(204).end();
   });
 
 module.exports = dogRouter;
