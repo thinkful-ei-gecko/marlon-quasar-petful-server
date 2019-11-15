@@ -1,6 +1,9 @@
+'use strict';
+
 const express = require('express');
 const path = require('path');
 const Cats = require('../../utility/Cats');
+const People = require('../../utility/People');
 
 const catRouter = express.Router();
 
@@ -11,7 +14,9 @@ catRouter
     res.json(catarray);
   })
   .delete((req, res, next) => {
-    Cats.dequeue();
+    let cat = Cats.dequeue();
+    cat.person = People.dequeue();
+    Cats.enqueue(cat);
     res.status(204).end();
   });
 

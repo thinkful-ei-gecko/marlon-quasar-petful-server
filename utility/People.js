@@ -4,7 +4,7 @@ const Queue = require('./Queue');
 
 let People = new Queue;
 
-sample person = {
+let person = {
   name: 'name',
   dog: true,
   cat: false
