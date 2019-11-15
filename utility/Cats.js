@@ -69,6 +69,4 @@ const cats = [
 
 cats.map(cat => Cats.enqueue(cat));
 
-Cats.display();
-
 module.exports = Cats;

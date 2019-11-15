@@ -69,6 +69,4 @@ const dogs = [
 
 dogs.map(dog => Dogs.enqueue(dog));
 
-Dogs.display();
-
 module.exports = Dogs;
