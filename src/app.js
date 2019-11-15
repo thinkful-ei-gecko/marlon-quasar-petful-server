@@ -7,7 +7,9 @@ const { NODE_ENV } = require('./config');
 const app = express();
 
 app.use(helmet());
-app.use(cors());
+app.use(cors({
+  origin: CLIENT_ORIGIN
+}));
 
 app.use(function validateBearerToken(req, res, next) {
   const apiToken = process.env.API_TOKEN;
