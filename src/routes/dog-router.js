@@ -15,7 +15,7 @@ dogRouter
   })
   .delete((req, res, next) => {
     let dog = Dogs.dequeue();
-    dog.person = People.dequeue();
+    dog.adopter = People.dequeue();
     Dogs.enqueue(dog);
     res.status(204).end();
   });

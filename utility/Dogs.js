@@ -16,6 +16,7 @@ const dogs = [
     breed: 'Bengal',
     story: 'Thrown on the street',
     id: 1,
+    adopter: null,
   },
   {
     imageURL:
@@ -28,6 +29,7 @@ const dogs = [
     breed: 'Bengal',
     story: 'Thrown on the street',
     id: 2,
+    adopter: null,
   },
   {
     imageURL:
@@ -40,6 +42,7 @@ const dogs = [
     breed: 'Bengal',
     story: 'Thrown on the street',
     id: 3,
+    adopter: null,
   },
   {
     imageURL:
@@ -51,7 +54,8 @@ const dogs = [
     age: 2,
     breed: 'Bengal',
     story: 'Thrown on the street',
-    id: 4
+    id: 4,
+    adopter: null,
   },
   {
     imageURL:
@@ -63,7 +67,8 @@ const dogs = [
     age: 2,
     breed: 'Bengal',
     story: 'Thrown on the street',
-    id: 5
+    id: 5,
+    adopter: null,
   },
 ];
 

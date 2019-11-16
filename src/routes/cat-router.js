@@ -15,7 +15,7 @@ catRouter
   })
   .delete((req, res, next) => {
     let cat = Cats.dequeue();
-    cat.person = People.dequeue();
+    cat.adopter = People.dequeue();
     Cats.enqueue(cat);
     res.status(204).end();
   });
