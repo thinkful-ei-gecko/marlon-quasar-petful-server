@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
+const morgan = require('morgan');
 const { NODE_ENV, CLIENT_ORIGIN } = require('./config');
 
 const catRouter = require('./routes/cat-router');
@@ -9,7 +10,7 @@ const dogRouter = require('./routes/dog-router');
 const peopleRouter = require('./routes/people-router');
 
 const app = express();
-
+app.use(morgan('tiny'));
 app.use(helmet());
 app.use(cors({
   origin: 'http://localhost:3000' 

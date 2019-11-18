@@ -15,11 +15,11 @@ peopleRouter
   })
   .post(bodyParser, (req, res, next) => {
     const { name } = req.body;
-
+    console.log(name);
     People.enqueue(name);
-    res
-      .status(201) // prettier-ignore
-      .json(name);
+    res.status(201).end();
+    
+    // prettier-ignore
   });
 
 module.exports = peopleRouter;
