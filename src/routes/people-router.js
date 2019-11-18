@@ -15,7 +15,7 @@ peopleRouter
   })
   .post(bodyParser, (req, res, next) => {
     const { name } = req.body;
-    console.log(name);
+    // console.log(name);
     People.enqueue(name);
     res.status(201).end();
     
