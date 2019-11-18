@@ -13,7 +13,7 @@ const app = express();
 app.use(morgan('tiny'));
 app.use(helmet());
 app.use(cors({
-  origin: 'http://localhost:3000' 
+  origin: CLIENT_ORIGIN
 }));
 
 // app.use(function validateBearerToken(req, res, next) {
